@@ -1,0 +1,82 @@
+#nav_on:hover{
+    color: coral;
+}
+
+
+.makecenter{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-title{
+    color: black;
+}
+.post-title:hover{
+    color: coral;
+}
+
+.row-title{
+    margin: 0px;
+    padding: 0px;
+}
+
+.col-title-comments{
+    padding: 0px;
+    margin: 0px;
+}
+
+.comments-title{
+    color: coral;
+}
+.comments-title:hover{
+    color: chocolate;
+}
+
+.col-title{
+    padding: 0px;
+    margin: 0px;
+}
+.container-title{
+    padding: 0px;
+    margin: 0px;
+}
+
+.content{
+    margin-top:15px ;
+}
+
+.container-detail{
+    padding: 20px 50px 50px 50px;
+}
+
+.container-comments{
+    padding: 0px;
+}
+
+.btn-comment{
+    background: coral;
+    border: coral;
+    font-weight: bold;
+}
+.btn-comment:hover{
+    background: chocolate;
+    border: chocolate;
+}
+#comment-author{
+    color: coral;
+}
+.comment-author{
+    margin:0px;
+}
+.comment-date{
+    margin:0px;
+    margin-left: 5px;
+}
+
+.headings{
+    font-family: 'Anton', sans-serif;
+}
+
+.para{
+    font-family: 'Raleway', sans-serif;
+}

@@ -1,0 +1,18 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="container" style="padding-top: 30px">
+    <div class="jumbotron" style="background-color: white; padding-top: 0px;">
+    <h1 class="headings">New Comment</h1>
+    <form class="post-form uniform" method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" style="font-weight: bold; background-color: coral; border-color: coral;" class="btn btn-lg btn-primary save">Post Comment</button>
+    </form>
+
+        <script>var editor = new MediumEditor('.editable');</script>
+        <script src="js/medium-editor.js"></script>
+        <script>var editor = new MediumEditor('.editable');</script>
+    </div>
+    </div>
+{% endblock %}

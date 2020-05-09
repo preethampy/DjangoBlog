@@ -1,0 +1,29 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="blog_posts">
+                    <div class="makecenter">
+                        {% for post in post_list %}
+                            <div class="post">
+                                <h1><a class="post-title headings" href="{% url 'post_detail' pk=post.pk %}">{{ post.title|truncatechars:74 }}</a></h1>
+                                <p class="para">{{ post.text|safe|truncatechars:200 }}</p>
+                                <div class="container container-title">
+                                    <div class="row row-title">
+                                        <div class="col-4 col-title">
+                                            <p class="date-title para">Published on: {{ post.published_date|date:"D M Y" }}</p>
+                                        </div>
+                                        <div class="col-8 col-title-comments">
+                                            <a class="comments-title para" href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approve_comments.count }}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
